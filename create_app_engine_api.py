@@ -14,7 +14,7 @@ table_id = f"{client.project}.{dataset.dataset_id}.students_table"
 app = FastAPI()
 
 
-@app.get("/people")
+@app.get("/")
 def get_people():
     query = f"""
         SELECT *
