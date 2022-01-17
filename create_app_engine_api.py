@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from google.cloud import bigquery
 from google.oauth2 import service_account
 
+#  This comment
+
 credentials = service_account.Credentials.from_service_account_file("./gcp-service-account-keys.json")
 client = bigquery.Client(credentials=credentials)
 
